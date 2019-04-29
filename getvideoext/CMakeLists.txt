@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-set(LSMISC_DIR C:/local/msys2/home/bjdTfeRf/gitdev/lsMisc)
+set(LSMISC_DIR ../../lsMisc)
 
 include_directories(${LSMISC_DIR})
 include_directories(.)
@@ -15,6 +15,7 @@ add_executable (getvideoext
 "${LSMISC_DIR}/UTF16toUTF8.cpp" "${LSMISC_DIR}/UTF16toUTF8.h"
 "${LSMISC_DIR}/UrlEncode.cpp" "${LSMISC_DIR}/UrlEncode.h"
 "${LSMISC_DIR}/RunCommandGetResult.cpp" "${LSMISC_DIR}/RunCommandGetResult.h"
+"${LSMISC_DIR}/stdosd/stdosd.cpp" "${LSMISC_DIR}/stdosd/stdosd_win.cpp" "${LSMISC_DIR}/stdosd/stdosd.h"
 )
 
 # TODO: Add tests and install targets if needed.
